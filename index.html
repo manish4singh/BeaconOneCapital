@@ -45,11 +45,31 @@
             <img src="./assets/logos/Group 1707488903.png" alt="logo" />
           </a>
 
-          <!-- Contact Button (always visible, before toggler) -->
-          <div class="d-flex align-items-center ms-auto order-lg-2">
-            <button class="btn btn-primary1 btn-padding1">Contact Us</button>
+          <!-- Desktop Nav (inline, visible only on lg and up) -->
+          <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#url"
+                  >Philosophy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#url">Asset Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#url">About Us</a>
+              </li>
+            </ul>
+            <div class="nav-right ms-3">
+              <button class="btn btn-primary1 btn-padding1">Contact Us</button>
+            </div>
+          </div>
 
-            <!-- Offcanvas Toggler -->
+          <!-- Mobile Right-side items (Contact + Hamburger) -->
+          <div class="d-flex align-items-center ms-auto d-lg-none">
+            <button class="btn btn-primary1 btn-padding1 me-2">
+              Contact Us
+            </button>
             <button
               class="navbar-toggler"
               type="button"
@@ -61,37 +81,41 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-
-          <!-- Offcanvas Menu -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <button
-              type="button"
-              class="btn-close ms-auto m-3"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#url"
-                    >Philosophy</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#url">Asset Classes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#url">About Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </nav>
+      </div>
+
+      <!-- Offcanvas Menu (only for mobile) -->
+      <div
+        class="offcanvas offcanvas-end d-lg-none"
+        tabindex="-1"
+        id="offcanvasNavbar"
+      >
+        <!-- Close Button -->
+        <div class="d-flex justify-content-end p-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Nav links -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav text-center w-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#url"
+                >Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#url">Asset Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#url">About Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
